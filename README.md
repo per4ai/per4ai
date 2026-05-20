@@ -6,7 +6,7 @@
 
 ### 🤖 Passionate about AI, Automation, and building the future of Software Engineering.
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=F75C7E&center=true&vCenter=true&width=435&lines=Building+Agentic+Systems;Solving+Complex+Problems;Exploring+the+Future+of+AI)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=FF9F0A&center=true&vCenter=true&width=435&lines=Building+Agentic+Systems;Independent+AI+Engineer;Exploring+the+Future+of+AI)](https://git.io/typing-svg)
 
 </div>
 
@@ -14,7 +14,7 @@
 
 ### 📖 About Me
 
-I am a software engineer focused on the intersection of **Artificial Intelligence** and **Developer Tools**. I love building autonomous agents and exploring how LLMs can transform the way we write code.
+I am an independent software engineer focused on the intersection of **Artificial Intelligence** and **Developer Tools**. I love building autonomous agents and exploring how LLMs can transform the way we write code.
 
 - 🔭 I’m currently working on building advanced agentic coding assistants.
 - 🌱 I’m currently learning deeper aspects of reinforcement learning and prompt engineering.
