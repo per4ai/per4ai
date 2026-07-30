@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Professional one-page CV / resume template">
+  <title>CV — Per Anebert</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="page">
+
+  <!-- ═══════════════════ SIDEBAR ═══════════════════ -->
+  <aside class="sidebar">
+
+    <!-- Profile Photo -->
+    <div class="photo-wrapper">
+      <div class="photo-placeholder" id="profile-photo">
+        <img src="profile_image.png" alt="Per Anebert" class="profile-img">
+      </div>
+    </div>
+
+    <!-- Name -->
+    <h1 class="name" id="full-name">Per Anebert</h1>
+    <p class="title" id="job-title">System Developer | IT/AI Architect</p>
+
+    <!-- Contact -->
+    <section class="sidebar-section" id="contact-section">
+      <h2 class="sidebar-heading">Contact</h2>
+
+      <div class="contact-item" id="contact-email">
+        <span class="contact-icon">
+          <svg viewBox="0 0 20 20" fill="currentColor"><path d="M2.94 6.34l7.06 4.42 7.06-4.42A2 2 0 0 0 15 5H5a2 2 0 0 0-2.06 1.34zM18 8.18l-7.68 4.8a.5.5 0 0 1-.64 0L2 8.18V14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8.18z"/></svg>
+        </span>
+        <span class="contact-text">per.anebert@gmail.com</span>
+      </div>
+
+      <div class="contact-item" id="contact-phone">
+        <span class="contact-icon">
+          <svg viewBox="0 0 20 20" fill="currentColor"><path d="M2 3.5A1.5 1.5 0 0 1 3.5 2h2.879a1.5 1.5 0 0 1 1.488 1.313l.5 4A1.5 1.5 0 0 1 7.42 9.06l-1.45.97a11.07 11.07 0 0 0 4 4l.97-1.45a1.5 1.5 0 0 1 1.747-.947l4 .5A1.5 1.5 0 0 1 18 13.62V16.5a1.5 1.5 0 0 1-1.5 1.5h-1C8.044 18 2 11.956 2 4.5v-1z"/></svg>
+        </span>
+        <span class="contact-text">+46704985532</span>
+      </div>
+
+      <div class="contact-item" id="contact-location">
+        <span class="contact-icon">
+          <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 2a6 6 0 0 0-6 6c0 4.5 6 10 6 10s6-5.5 6-10a6 6 0 0 0-6-6zm0 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4z" clip-rule="evenodd"/></svg>
+        </span>
+        <span class="contact-text">Lund, Sweden</span>
+      </div>
+
+      <div class="contact-item" id="contact-linkedin">
+        <span class="contact-icon">
+          <svg viewBox="0 0 20 20" fill="currentColor"><path d="M5.075 2.5a1.575 1.575 0 1 1 0 3.15 1.575 1.575 0 0 1 0-3.15zM3.5 7h3.15v10H3.5V7zm5.6 0h3.02v1.37h.04c.42-.8 1.45-1.63 2.98-1.63 3.19 0 3.78 2.1 3.78 4.83V17h-3.15v-4.8c0-1.14-.02-2.61-1.59-2.61-1.59 0-1.84 1.24-1.84 2.53V17H9.1V7z"/></svg>
+        </span>
+        <span class="contact-text">linkedin.com/in/per-anebert</span>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="sidebar-section" id="skills-section">
+      <h2 class="sidebar-heading">Skills</h2>
+
+      <div class="skill" id="skill-1">
+        <div class="skill-label">Java / Spring Boot</div>
+        <div class="skill-bar"><div class="skill-fill" style="--level: 90%"></div></div>
+      </div>
+      <div class="skill" id="skill-2">
+        <div class="skill-label">C# / .NET</div>
+        <div class="skill-bar"><div class="skill-fill" style="--level: 85%"></div></div>
+      </div>
+      <div class="skill" id="skill-3">
+        <div class="skill-label">AI & LLM Integration</div>
+        <div class="skill-bar"><div class="skill-fill" style="--level: 80%"></div></div>
+      </div>
+      <div class="skill" id="skill-4">
+        <div class="skill-label">Cloud Native / Microservices</div>
+        <div class="skill-bar"><div class="skill-fill" style="--level: 80%"></div></div>
+      </div>
+      <div class="skill" id="skill-5">
+        <div class="skill-label">Enterprise Architecture</div>
+        <div class="skill-bar"><div class="skill-fill" style="--level: 75%"></div></div>
+      </div>
+    </section>
+
+    <!-- Languages -->
+    <section class="sidebar-section" id="languages-section">
+      <h2 class="sidebar-heading">Languages</h2>
+      <ul class="language-list">
+        <li>Swedish <span class="lang-level">— Native</span></li>
+        <li>English <span class="lang-level">— Fluent</span></li>
+        <li>German <span class="lang-level">— Basic</span></li>
+      </ul>
+    </section>
+  </aside>
+
+  <!-- ═══════════════════ MAIN CONTENT ═══════════════════ -->
+  <main class="content">
+
+    <!-- Profile / Summary -->
+    <section class="section" id="profile-section">
+      <h2 class="section-heading">
+        <span class="heading-icon">
+          <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 2a5 5 0 0 0-5 5v1a5 5 0 0 0 10 0V7a5 5 0 0 0-5-5zm-7 14a7 7 0 0 1 14 0v1H3v-1z" clip-rule="evenodd"/></svg>
+        </span>
+        Profile
+      </h2>
+      <p class="summary" id="profile-summary">
+        Specialized System Developer and AI Architect with a focus on bridging the gap between advanced technology and business value. I have built a custom academic path combining core Computer Science with cutting-edge AI research and Strategic Digital Leadership. I am dedicated to helping organizations realize their AI strategy through robust architecture and social knowledge-sharing.
+      </p>
+
+      <div class="expertise-domains">
+        <div class="domain-tag">AI & Intelligent Systems</div>
+        <div class="domain-tag">Strategic Digital Leadership</div>
+        <div class="domain-tag">Enterprise IT Architecture</div>
+        <div class="domain-tag">Cloud Native Development</div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section" id="projects-section">
+      <h2 class="section-heading">
+        <span class="heading-icon">
+          <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-2.22l.97 2.91a.5.5 0 0 1-.47.66H6.72a.5.5 0 0 1-.47-.66L7.22 15H5a2 2 0 0 1-2-2V5zm2 0h10v8H5V5z" clip-rule="evenodd"/></svg>
+        </span>
+        Projects
+      </h2>
+
+      <div class="projects-grid" id="projects-grid">
+
+
+      <article class="project-card" id="project-1"
+               data-title="Agentic Multi-Agent System Concept"
+               data-image="image-project-1-1.png, image-project-1-2.png"
+               data-detail="Developed an architectural framework for agentic multi-agent systems utilizing LLM agents to solve complex tasks through NLP analysis and modeling. By translating advanced technical theories into scalable implementation methods, the project integrated these systems into business processes using visual tools (BPMN). This approach bridged the gap between theoretical concepts and practical applications, simplified strategic discussions, and established a foundation for configuring proprietary AI systems as a core internal competency.">
+        <div class="project-card-accent"></div>
+        <h3 class="project-name">Agentic Multi-Agent Systems</h3>
+        <p class="project-desc">Architectural framework utilizing LLM agents for NLP analysis and modeling.</p>
+        <div class="project-tags">
+          <span class="tag">LLM Agents</span>
+          <span class="tag">NLP</span>
+          <span class="tag">BPMN</span>
+        </div>
+        <span class="card-expand-hint">Click for details</span>
+      </article>
+
+      <article class="project-card" id="project-2"
+               data-title="Intelligent Spam Identification System"
+               data-image="image-project-2-1.png, image-project-2-2.png"
+               data-detail="Developed an advanced spam identification prototype combining Naive Bayes with modern LLMs (Llama 3/Mistral). Features a Gradio dashboard for real-time visualization of performance metrics. The system addresses business needs through Department Routing and Named Entity Recognition (NER), automating the triage of incoming emails to Finance, HR, or Legal departments. Testing demonstrated 98% precision with Naive Bayes, while LLM analysis added critical semantic understanding to distinguish legal invoices from sophisticated phishing.">
+        <div class="project-card-accent"></div>
+        <h3 class="project-name">Spam Email Identifier</h3>
+        <p class="project-desc">Hybrid ML/LLM prototype for automated email triage and department routing.</p>
+        <div class="project-tags">
+          <span class="tag">Machine Learning</span>
+          <span class="tag">Llama 3 / Mistral</span>
+          <span class="tag">Gradio</span>
+        </div>
+        <span class="card-expand-hint">Click for details</span>
+      </article>
+
+      <article class="project-card" id="project-3"
+               data-title="Strategic Dimension of Healthcare Digitalization"
+               data-image="image-project-3-1.png, image-project-3-2.png, image-project-3-3.png, image-project-3-4.png"
+               data-detail="Analyzed Region Skåne's digitalization in the context of global trends like aging populations and accelerating technology. The study focuses on coordination and implementation of digital strategies within a siloed government organization. It emphasizes that digital transformation is driven by strategy rather than technology alone, while highlighting the challenges of parallel governance documents in a democratic organization.">
+        <div class="project-card-accent"></div>
+        <h3 class="project-name">Region Skåne Digitalization</h3>
+        <p class="project-desc">Strategic study on digital transformation within a complex healthcare organization.</p>
+        <div class="project-tags">
+          <span class="tag">Digital transformation</span>
+          <span class="tag">Strategi</span>
+        </div>
+        <span class="card-expand-hint">Click for details</span>
+      </article>
+
+      <article class="project-card" id="project-4"
+               data-title="AI-Driven Stakeholder Simulation"
+               data-image="image-project-4-1.png, image-project-4-2.png, image-project-4-3.png"
+               data-detail="Developed a method to increase project success rates using configured AI agents. The project simulates stakeholders within a hospital organization (e.g., Medical Director, IT Manager, Patient Advocate). By facilitating simulated discussions between these agents, critical risks and ethical dilemmas are identified early. This enables dynamic SWOT modeling and risk analysis, addressing common causes of project failure such as unclear requirements. The result is a robust decision-making platform that reduces uncertainty before implementation.">
+        <div class="project-card-accent"></div>
+        <h3 class="project-name">Project Stakeholder Simulation</h3>
+        <p class="project-desc">Methodology for project efficiency using LLM agents to simulate stakeholders.</p>
+        <div class="project-tags">
+          <span class="tag">Förstudie</span>
+          <span class="tag">Projektledning</span>
+        </div>
+        <span class="card-expand-hint">Click for details</span>
+      </article>
+
+      <article class="project-card" id="project-5"
+               data-title="Business Process Mapping & Optimization"
+               data-image="image-project-5-1.png, image-project-5-2.png"
+               data-detail="Analyzed and mapped business processes for a conference center to resolve booking errors and communication gaps. Replaced manual paper-based tracking with a formalized process model, identifying bottlenecks in information flow. The project defined business objects linking information and data models, creating a bridge to future IT systems. The result provided a detailed, optimized process view that serves as a concrete decision base for digital transformation and resource efficiency.">
+        <div class="project-card-accent"></div>
+        <h3 class="project-name">Verksamhetsprocesser</h3>
+        <p class="project-desc">Comprehensive mapping and optimization of manual processes for digital readiness.</p>
+        <div class="project-tags">
+          <span class="tag">Digitalisering</span>
+          <span class="tag">Verksamhetsutveckling</span>
+        </div>
+        <span class="card-expand-hint">Click for details</span>
+      </article>
+
+      <article class="project-card" id="project-6"
+               data-title="Enterprise IT Architecture Roadmap"
+               data-image="image-project-6-1.png, image-project-6-2.png, image-project-6-3.png"
+               data-detail="Addressed legacy system challenges in a retail environment by developing a comprehensive Enterprise Architecture roadmap. Utilizing BPMN notation, the project mapped existing processes and designed a target architecture based on microservices to enable automated B2B ordering. Through GAP analysis, a concrete action plan was integrated to support data-driven marketing and IoT security. The result is a robust roadmap for digital transformation, securing future growth through optimized operational flows.">
+        <div class="project-card-accent"></div>
+        <h3 class="project-name">IT-arkitektur & Roadmaps</h3>
+        <p class="project-desc">BPMN-based architecture and microservices roadmap for a retail organization.</p>
+        <div class="project-tags">
+          <span class="tag">Enterprise Architecture</span>
+          <span class="tag">Digitalisering</span>
+          <span class="tag">BPMN</span>
+          <span class="tag">Processoptimering</span>
+        </div>
+        <span class="card-expand-hint">Click for details</span>
+      </article>
+
+      <article class="project-card" id="project-7"
+               data-title="Geospatial Analysis & Cartographic Design"
+               data-image="image-project-7-1.png"
+               data-detail="In my GIS projects, I have developed advanced analyses for environmental monitoring and logistics by mapping eutrophication levels in shallow bays in Västra Götaland. Through vector analysis and the GRASS tool v.net.distance, access routes to survey points were optimized taking into account geographical constraints such as distance to land. For central Gothenburg, I conducted a spatial temperature analysis with IDW interpolation to identify and calculate the area of ​​the city's coldest zones. Finally, I visualized demographic patterns for Lifelong Learning through heatmaps of student distribution in Sweden. The analysis combined spatial density in regions such as Stockholm and Malmö with age structure to provide strategic insights into regional participation in higher education. These projects demonstrate my ability to transform complex data sources into visual decision-making bases with high precision in QGIS. By combining technical precision with strategic visualization, I create added value in organizations' decision-making around both the environment and social planning.">
+        <div class="project-card-accent"></div>
+        <h3 class="project-name">Geospatial GIS Analysis</h3>
+        <p class="project-desc">Spatial interpolation and distance analysis project using open-source GIS tools.</p>
+        <div class="project-tags">
+          <span class="tag">QGIS</span>
+          <span class="tag">Interpolation</span>
+          <span class="tag">Spatial Data</span>
+        </div>
+        <span class="card-expand-hint">Click for details</span>
+      </article>
+
+      <article class="project-card" id="project-8"
+               data-title="GeoAI-based Weather Dashboard for Regional Planning"
+               data-image="image-project-8-1.png, image-project-8-2.png, image-project-8-3.png"
+               data-detail="Within the framework of the Geospatial Python course, I developed SMHI Weather Dashboard, a system for real-time monitoring that makes weather data actionable for regional planning and public information. The project combines official data from SMHI's API with geographical boundaries from SCB through advanced spatial joins and coordinate transformations in Python. The strategic dimension consists of the integration of a local LLM (Gemma 3:1B) via Ollama, which enables automated weather analyses in real time without dependence on external cloud services, ensuring full data integrity. With an interactive Gradio interface, users can visualize parameters such as precipitation and wind through Folium maps and historical archiving. The result is a scalable decision support that demonstrates how GeoAI and Distributed AI (DAI) can generate insightful analyses under human supervision (Human-in-the-loop). By combining technical precision with strategic sovereignty, a robust platform for future weather services is created">
+      <div class="project-card-accent"></div>
+      <h3 class="project-name">GeoAI-based Weather Dashboard</h3>
+      <p class="project-desc">An interactive Python application that combines real-time geospatial data with local AI models for superior weather analysis and regional decision support.</p>
+      <div class="project-tags">
+        <span class="tag">GeoAI</span>
+        <span class="tag">Sovereign AI</span>
+        <span class="tag">Gradio</span>
+      </div>
+      <span class="card-expand-hint">Click for details</span>
+      </article>
+      </div>
+
+    </section>
+
+    <!-- Education -->
+    <section class="section" id="education-section">
+      <h2 class="section-heading" style="display: flex; justify-content: space-between; align-items: center;">
+        <span>
+          <span class="heading-icon">
+            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10.394 2.08a1 1 0 0 0-.788 0l-7 3a1 1 0 0 0 0 1.84L5 8.18v3.32A6.003 6.003 0 0 0 10 17a6.003 6.003 0 0 0 5-5.5V8.18l2.394-1.026a1 1 0 0 0 0-1.838l-7-3.001zM15 8.61l-5 2.143-5-2.143V11.5A4.002 4.002 0 0 0 10 15a4.002 4.002 0 0 0 5-3.5V8.61z"/></svg>
+          </span>
+          Education
+        </span>
+        <a href="courses.html" style="font-size: 0.8em; font-weight: 500; background: var(--primary-color, #f0f0f0); padding: 5px 12px; border-radius: 4px; text-decoration: none; color: #333; border: 1px solid #ccc;">View Detailed Coursework →</a>
+      </h2>
+
+      <article class="edu-entry" id="education-1">
+        <div class="timeline-header">
+          <div>
+            <h3 class="entry-title">Advanced Studies on Master Level (40 ECTS)</h3>
+            <p class="entry-org">Mid Sweden University, University of Skövde, Örebro University</p>
+          </div>
+          <span class="entry-date">Ongoing</span>
+        </div>
+        <ul class="entry-details">
+            <li>Specialization in Distributed AI, Multi-Agent Systems, and LLM implementation.</li>
+            <li>Advanced courses in Hybrid Decision Making and Digital Healthcare Co-design.</li>
+        </ul>
+      </article>
+
+      <article class="edu-entry" id="education-2">
+        <div class="timeline-header">
+          <div>
+            <h3 class="entry-title">Bachelor of Science in Applied Information Technology (180 ECTS)</h3>
+            <p class="entry-org">University of Gothenburg</p>
+          </div>
+          <span class="entry-date">Completion 2026</span>
+        </div>
+        <ul class="entry-details">
+            <li>Degree built through specialized stand-alone courses ensuring high domain-specific depth.</li>
+            <li>Core focus on Software Engineering, IT Architecture, and Digital Transformation.</li>
+        </ul>
+      </article>
+
+      <article class="edu-entry" id="education-3">
+        <div class="timeline-header">
+          <div>
+            <h3 class="entry-title">Specialized Vocational Certifications (150 Credits)</h3>
+            <p class="entry-org">Various Institutions</p>
+          </div>
+          <span class="entry-date">2022 — 2023</span>
+        </div>
+        <ul class="entry-details">
+            <li>Python Programming with AI development.</li>
+            <li>Cloud Native Computing and Microservices (Java/Spring Boot).</li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- Work Experience (compact) -->
+    <section class="section" id="experience-section">
+      <h2 class="section-heading">
+        <span class="heading-icon">
+          <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M6 4V3a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1h3a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h3zm2-1h4v1H8V3z" clip-rule="evenodd"/></svg>
+        </span>
+        Experience
+      </h2>
+
+      <div class="timeline">
+        <article class="timeline-entry" id="experience-1">
+          <div class="timeline-dot"></div>
+          <div class="timeline-header">
+            <div>
+              <h3 class="entry-title">Independent Developer & IT Consultant</h3>
+              <p class="entry-org">Self-employed · Lund</p>
+            </div>
+            <span class="entry-date">2019 — 2022</span>
+          </div>
+          <ul class="entry-details">
+            <li>Full-stack development and strategic IT advisory for small-to-medium enterprises.</li>
+            <li>Implemented custom software solutions focusing on process automation and data integration.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<!-- ═══════════════════ PROJECT DETAIL MODAL ═══════════════════ -->
+<dialog class="project-modal" id="project-modal">
+  <div class="modal-inner">
+    <button class="modal-close" id="modal-close" aria-label="Close">
+      <svg viewBox="0 0 20 20" fill="currentColor" width="20" height="20"><path d="M6.28 5.22a.75.75 0 0 0-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 1 0 1.06 1.06L10 11.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L11.06 10l3.72-3.72a.75.75 0 0 0-1.06-1.06L10 8.94 6.28 5.22z"/></svg>
+    </button>
+    <h3 class="modal-title" id="modal-title"></h3>
+    <div class="modal-image-wrapper" id="modal-image-wrapper">
+
+      <button class="modal-nav prev" id="modal-prev" aria-label="Previous image">
+        <svg viewBox="0 0 20 20" fill="currentColor" width="24" height="24"><path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+      </button>
+
+      <div id="modal-image-container" style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;"></div>
+
+      <button class="modal-nav next" id="modal-next" aria-label="Next image">
+        <svg viewBox="0 0 20 20" fill="currentColor" width="24" height="24"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" /></svg>
+      </button>
+
+      <!-- Placeholder shown when empty -->
+      <div class="modal-image-placeholder" id="modal-image-placeholder">
+        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="4" y="8" width="40" height="32" rx="4" stroke="currentColor" stroke-width="2" fill="none"/>
+          <circle cx="16" cy="20" r="4" stroke="currentColor" stroke-width="2" fill="none"/>
+          <path d="M4 32l10-8 8 6 8-10 14 12" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+    </div>
+    <p class="modal-description" id="modal-description"></p>
+  </div>
+</dialog>
+
+<!-- Scripts -->
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    /* ── Entrance animations ── */
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.section, .sidebar-section, .photo-wrapper, .name, .title')
+      .forEach(el => observer.observe(el));
+
+    /* ── Project modal carousel ── */
+    const modal       = document.getElementById('project-modal');
+    const modalTitle  = document.getElementById('modal-title');
+    const modalDesc   = document.getElementById('modal-description');
+    const modalImgCont = document.getElementById('modal-image-container');
+    const modalPlaceholder = document.getElementById('modal-image-placeholder');
+    const closeBtn    = document.getElementById('modal-close');
+    const prevBtn     = document.getElementById('modal-prev');
+    const nextBtn     = document.getElementById('modal-next');
+
+    let currentImages = [];
+    let currentIndex = 0;
+
+    const updateModalImage = () => {
+      modalImgCont.innerHTML = '';
+      if (currentImages.length > 0) {
+        modalPlaceholder.style.display = 'none';
+        const img = document.createElement('img');
+        img.src = currentImages[currentIndex];
+        img.alt = modalTitle.textContent;
+        img.className = 'modal-image';
+        modalImgCont.appendChild(img);
+
+        // Show/hide nav buttons
+        prevBtn.style.display = currentImages.length > 1 ? 'flex' : 'none';
+        nextBtn.style.display = currentImages.length > 1 ? 'flex' : 'none';
+      } else {
+        modalPlaceholder.style.display = 'flex';
+        prevBtn.style.display = 'none';
+        nextBtn.style.display = 'none';
+      }
+    };
+
+    // Open modal when any project card is clicked
+    document.querySelectorAll('.project-card').forEach(card => {
+      card.addEventListener('click', () => {
+        modalTitle.textContent = card.dataset.title  || '';
+        modalDesc.textContent  = card.dataset.detail || '';
+
+        // Split comma-separated images and filter out empty strings
+        const imageStr = card.dataset.image || '';
+        currentImages = imageStr ? imageStr.split(',').map(s => s.trim()).filter(s => s !== '') : [];
+        currentIndex = 0;
+
+        updateModalImage();
+        modal.showModal();
+      });
+    });
+
+    prevBtn.addEventListener('click', () => {
+      currentIndex = (currentIndex - 1 + currentImages.length) % currentImages.length;
+      updateModalImage();
+    });
+
+    nextBtn.addEventListener('click', () => {
+      currentIndex = (currentIndex + 1) % currentImages.length;
+      updateModalImage();
+    });
+
+    // Close button
+    closeBtn.addEventListener('click', () => modal.close());
+
+    // Close on backdrop click
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) modal.close();
+    });
+  });
+</script>
+</body>
+</html>
