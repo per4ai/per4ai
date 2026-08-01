@@ -8,7 +8,7 @@
 
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=FF9F0A&center=true&vCenter=true&width=435&lines=Bridging+Business+and+AI;Enterprise+AI+Architecture;System+Development+%26+Integration)](https://git.io/typing-svg)
 
-**[✨ View my Interactive Resume & Portfolio](https://per4ai.github.io) ✨**
+**[✨ View my Interactive Resume & Portfolio](https://per4ai.github.io/per4ai/) ✨**
 
 </div>
 
