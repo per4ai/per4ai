@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="sv" class="h-full bg-slate-950 text-slate-100">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfölj & CV | Enterprise AI Orchestrator</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#eef2ff',
+              100: '#e0e7ff',
+              500: '#6366f1',
+              600: '#4f46e5',
+              700: '#4338ca',
+              900: '#312e81',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    /* Custom scrollbar to keep layout premium */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #0f172a;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #334155;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #475569;
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between font-sans antialiasedSelection Selection:bg-brand-500/30">
+
+  <!-- TOP HEADER & NAVIGATION -->
+  <header class="border-b border-slate-800 bg-slate-900/80 backdrop-blur sticky top-0 z-40 transition-all">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <div class="p-2 bg-brand-500/10 rounded-lg text-brand-500 border border-brand-500/20">
+          <i data-lucide="cpu" class="w-6 h-6"></i>
+        </div>
+        <div>
+          <h1 class="text-xl font-bold tracking-tight text-white">Per Anebert</h1>
+          <p class="text-xs text-slate-400 font-medium tracking-wide uppercase">Enterprise AI Orchestrator & Developer</p>
+        </div>
+      </div>
+      
+      <!-- Interactive Tabs -->
+      <nav class="flex space-x-1 bg-slate-950 p-1 rounded-xl border border-slate-800">
+        <button id="tab-profile" onclick="switchTab('profile')" class="px-4 py-2 text-sm font-medium rounded-lg transition-all duration-200 flex items-center gap-2 bg-brand-600 text-white shadow-sm shadow-brand-900/30">
+          <i data-lucide="user" class="w-4 h-4"></i>
+          Profil & Kompetens
+        </button>
+        <button id="tab-projects" onclick="switchTab('projects')" class="px-4 py-2 text-sm font-medium rounded-lg transition-all duration-200 flex items-center gap-2 text-slate-400 hover:text-white hover:bg-slate-900">
+          <i data-lucide="folder-git-2" class="w-4 h-4"></i>
+          Interaktiva Projekt (Sida 2)
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT CONTAINER -->
+  <main class="max-w-6xl w-full mx-auto px-4 py-8 flex-grow">
+
+    <!-- PAGE 1: PROFILE & COMPETENCE (TWO COLUMNS) -->
+    <section id="section-profile" class="space-y-8 animate-fade-in">
+      
+      <!-- Elevator Banner -->
+      <div class="bg-gradient-to-r from-slate-900 via-indigo-950/40 to-slate-900 p-6 sm:p-8 rounded-2xl border border-slate-800 flex flex-col md:flex-row items-center justify-between gap-6 shadow-xl relative overflow-hidden">
+        <div class="absolute -right-20 -top-20 w-80 h-80 bg-brand-500/5 rounded-full blur-3xl"></div>
+        <div class="space-y-3 z-10 max-w-2xl">
+          <span class="px-3 py-1 bg-brand-500/10 text-brand-500 text-xs font-semibold rounded-full border border-brand-500/20 uppercase tracking-wider">Januari 2026 • Nyutexaminerad kandidatexamen</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">"The Bridge Builder"</h2>
+          <p class="text-slate-300 leading-relaxed text-sm sm:text-base">
+            Jag bygger inte bara isolerade AI-modeller. Jag designar och implementerar de styrsystem och den robusta IT-arkitektur som krävs för att ge AI verkligt affärsvärde i komplexa verksamheter – säkert, transparent och helt under er kontroll.
+          </p>
+        </div>
+        <div class="flex flex-col gap-3 min-w-[200px] w-full md:w-auto z-10">
+          <button onclick="switchTab('projects')" class="px-5 py-3 bg-brand-600 hover:bg-brand-500 text-white rounded-xl font-medium transition-all shadow-lg hover:shadow-brand-500/20 text-center flex items-center justify-center gap-2">
+            Visa projektportfölj
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </button>
+          <a href="mailto:per.anebert@gmail.com" class="px-5 py-3 bg-slate-800 hover:bg-slate-700 text-slate-200 rounded-xl font-medium transition-all text-center border border-slate-700">
+            Kontakta mig direkt
+          </a>
+        </div>
+      </div>
+
+      <!-- Two-Column Layout -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        
+        <!-- Column 1: Profile, Mindset, Education (Left) -->
+        <div class="lg:col-span-7 space-y-8">
+          
+          <!-- Om Mig & Varför jag skiljer mig från mängden -->
+          <div class="bg-slate-900 p-6 rounded-2xl border border-slate-800 space-y-4 shadow-md">
+            <h3 class="text-lg font-bold text-white flex items-center gap-2 border-b border-slate-800 pb-3">
+              <i data-lucide="sparkles" class="text-amber-500 w-5 h-5"></i>
+              Min Fördel: Noll "Legacy-Bagage" & Högsta Hunger
+            </h3>
+            <p class="text-slate-300 text-sm leading-relaxed">
+              Många utvecklare är fastlåsta i gårdagens mönster och gamla systemstrukturer. Genom att nyligen ha slutfört min kandidatexamen (januari 2026) kliver jag ut på arbetsmarknaden formad av de absolut senaste metoderna, ramverken och synen på AI-orkestrering. 
+            </p>
+            <p class="text-slate-300 text-sm leading-relaxed">
+              Mina kunskaper är färska, uppdaterade och djupt inriktade på den nya era där systemutvecklare inte bara skriver råkod, utan orkestrerar intelligenta agenter. Jag är snabblärd, extremt formbar efter ert teams arbetssätt och redo att producera affärsnytta från dag ett med stöd av marknadens modernaste AI-assistans.
+            </p>
+          </div>
+
+          <!-- Utbildningssektionen -->
+          <div class="bg-slate-900 p-6 rounded-2xl border border-slate-800 space-y-6 shadow-md">
+            <h3 class="text-lg font-bold text-white flex items-center gap-2 border-b border-slate-800 pb-3">
+              <i data-lucide="graduation-cap" class="text-brand-500 w-5 h-5"></i>
+              Utbildningsbakgrund
+            </h3>
+            
+            <!-- Masterutbildning pågående -->
+            <div class="relative pl-6 border-l-2 border-brand-500/30 space-y-2">
+              <div class="absolute -left-[7px] top-1.5 w-3 h-3 rounded-full bg-brand-500"></div>
+              <div class="flex items-center justify-between flex-wrap gap-2">
+                <h4 class="text-md font-bold text-white">Avancerade Magister- & Masterkurser</h4>
+                <span class="px-2.5 py-0.5 bg-brand-500/10 text-brand-500 text-xs font-semibold rounded border border-brand-500/20">Pågående</span>
+              </div>
+              <p class="text-xs text-slate-400">Specialisering inom distribuerad AI & Systemintegration</p>
+              <p class="text-slate-300 text-xs leading-relaxed">
+                Fokus på spetskompetens: Distribuerad AI & Multi-agentsystem, LLM för industrin (RAG, LangChain), Mikrotjänster & öppna WebAPI:er med Java Spring Cloud, Visual AI (YOLO-modeller), samt Informationssäkerhet i organisationer.
+              </p>
+            </div>
+
+            <!-- Kandidatexamen -->
+            <div class="relative pl-6 border-l-2 border-slate-800 space-y-2">
+              <div class="absolute -left-[7px] top-1.5 w-3 h-3 rounded-full bg-slate-700"></div>
+              <div class="flex items-center justify-between flex-wrap gap-2">
+                <h4 class="text-md font-bold text-white">Filosofie Kandidatexamen</h4>
+                <span class="px-2.5 py-0.5 bg-slate-800 text-slate-300 text-xs font-semibold rounded border border-slate-700">Examen Jan 2026</span>
+              </div>
+              <p class="text-xs text-slate-400">Huvudområde: Tillämpad Informationsteknologi | 180 HP</p>
+              <p class="text-slate-300 text-xs leading-relaxed">
+                En strategiskt och tvärvetenskapligt sammansatt utbildning som täcker helheten. Inkluderar traditionell systemutveckling (Java I & II, C#.NET, Databaser/SQL), IT- och koncernarkitektur (TOGAF/Archimate), samt processbaserad verksamhetsutveckling med BPMN/UML.
+              </p>
+            </div>
+          </div>
+
+          <!-- Agile Mindset / Samarbete -->
+          <div class="bg-slate-900 p-6 rounded-2xl border border-slate-800 space-y-3 shadow-md">
+            <h3 class="text-md font-bold text-white flex items-center gap-2">
+              <i data-lucide="users" class="text-emerald-500 w-5 h-5"></i>
+              BPMN som en Agil och Inkluderande Brygga
+            </h3>
+            <p class="text-slate-300 text-xs leading-relaxed">
+              När jag ritar och modellerar system eller AI-flöden i BPMN är mitt primära mål att riva de klassiska murarna mellan utvecklare och verksamhet. Ett flödesschema i BPMN avdramatiserar komplex teknik och låter icke-tekniska medarbetare, produktägare och ledning ge omedelbar, konstruktiv feedback. Det skapar en agil arbetsmiljö där alla kan känna delaktighet i digitaliseringsresan.
+            </p>
+          </div>
+
+        </div>
+
+        <!-- Column 2: Tech Skills & Badges (Right) -->
+        <div class="lg:col-span-5 space-y-6">
+          
+          <!-- Kompetensgruppering -->
+          <div class="bg-slate-900 p-6 rounded-2xl border border-slate-800 space-y-6 shadow-md">
+            <h3 class="text-lg font-bold text-white flex items-center gap-2 border-b border-slate-800 pb-3">
+              <i data-lucide="badge-check" class="text-brand-500 w-5 h-5"></i>
+              Teknisk Kompetensprofil
+            </h3>
+
+            <!-- Programmering -->
+            <div class="space-y-2">
+              <h4 class="text-xs font-semibold text-slate-400 uppercase tracking-wider flex items-center gap-1.5">
+                <span class="w-1.5 h-1.5 rounded-full bg-brand-500"></span>
+                Systemutveckling & Språk
+              </h4>
+              <div class="flex flex-wrap gap-1.5">
+                <span class="px-2.5 py-1 bg-slate-950 text-slate-200 rounded-lg text-xs border border-slate-800 font-mono">Java (Spring Boot / Cloud)</span>
+                <span class="px-2.5 py-1 bg-slate-950 text-slate-200 rounded-lg text-xs border border-slate-800 font-mono">C# (.NET Core)</span>
+                <span class="px-2.5 py-1 bg-slate-950 text-slate-200 rounded-lg text-xs border border-slate-800 font-mono">Python</span>
+                <span class="px-2.5 py-1 bg-slate-950 text-slate-200 rounded-lg text-xs border border-slate-800 font-mono">SQL / Databasdesign</span>
+                <span class="px-2.5 py-1 bg-slate-950 text-slate-200 rounded-lg text-xs border border-slate-800 font-mono">HTML5 / CSS3 / JavaScript</span>
+                <span class="px-2.5 py-1 bg-slate-950 text-slate-200 rounded-lg text-xs border border-slate-800 font-mono">Linux Administration</span>
+              </div>
+            </div>
+
+            <!-- AI & Data Science -->
+            <div class="space-y-2">
+              <h4 class="text-xs font-semibold text-slate-400 uppercase tracking-wider flex items-center gap-1.5">
+                <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+                AI & Data Science
+              </h4>
+              <div class="flex flex-wrap gap-1.5">
+                <span class="px-2.5 py-1 bg-slate-950 text-slate-200 rounded-lg text-xs border border-slate-800 font-mono">Agentic AI (Multi-Agents)</span>
+                <span class="px-2.5 py-1 bg-slate-950 text-slate-200 rounded-lg text-xs border border-slate-800 font-mono">LLM (Hugging Face)</span>
+                <span class="px-2.5 py-1 bg-slate-950 text-slate-200 rounded-lg text-xs border border-slate-800 font-mono">RAG & LangChain</span>
+                <span class="px-2.5 py-1 bg-slate-950 text-slate-200 rounded-lg text-xs border border-slate-800 font-mono">Visual AI (YOLO Models)</span>
+                <span class="px-2.5 py-1 bg-slate-950 text-slate-200 rounded-lg text-xs border border-slate-800 font-mono">NLP (NLTK, SpaCy)</span>
+                <span class="px-2.5 py-1 bg-slate-950 text-slate-200 rounded-lg text-xs border border-slate-800 font-mono">Data Quality for ML</span>
+              </div>
+            </div>
+
+            <!-- Arkitektur & Metodik -->
+            <div class="space-y-2">
+              <h4 class="text-xs font-semibold text-slate-400 uppercase tracking-wider flex items-center gap-1.5">
+                <span class="w-1.5 h-1.5 rounded-full bg-indigo-400"></span>
+                Arkitektur & Processer
+              </h4>
+              <div class="flex flex-wrap gap-1.5">
+                <span class="px-2.5 py-1 bg-slate-950 text-slate-200 rounded-lg text-xs border border-slate-800 font-mono">BPMN (Camunda)</span>
+                <span class="px-2.5 py-1 bg-slate-950 text-slate-200 rounded-lg text-xs border border-slate-800 font-mono">TOGAF / Archimate</span>
+                <span class="px-2.5 py-1 bg-slate-950 text-slate-200 rounded-lg text-xs border border-slate-800 font-mono">Microservices (Cloud Native)</span>
+                <span class="px-2.5 py-1 bg-slate-950 text-slate-200 rounded-lg text-xs border border-slate-800 font-mono">Informationssäkerhet</span>
+                <span class="px-2.5 py-1 bg-slate-950 text-slate-200 rounded-lg text-xs border border-slate-800 font-mono">Agila metoder</span>
+              </div>
+            </div>
+
+            <!-- Geospatial & Branschkompetens -->
+            <div class="space-y-2">
+              <h4 class="text-xs font-semibold text-slate-400 uppercase tracking-wider flex items-center gap-1.5">
+                <span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>
+                Geospatial & Domän
+              </h4>
+              <div class="flex flex-wrap gap-1.5">
+                <span class="px-2.5 py-1 bg-slate-950 text-slate-200 rounded-lg text-xs border border-slate-800 font-mono">GeoAI & QGIS</span>
+                <span class="px-2.5 py-1 bg-slate-950 text-slate-200 rounded-lg text-xs border border-slate-800 font-mono">GeoPandas & Folium</span>
+                <span class="px-2.5 py-1 bg-slate-950 text-slate-200 rounded-lg text-xs border border-slate-800 font-mono">HealthTech Solutions</span>
+                <span class="px-2.5 py-1 bg-slate-950 text-slate-200 rounded-lg text-xs border border-slate-800 font-mono">Digitala tvillingar</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Strategic Pitch -->
+          <div class="bg-gradient-to-br from-slate-900 to-indigo-950/60 p-6 rounded-2xl border border-slate-800 space-y-4 shadow-md">
+            <h4 class="text-sm font-bold text-slate-200 uppercase tracking-wider flex items-center gap-1.5">
+              <i data-lucide="shield-alert" class="text-indigo-400 w-4 h-4"></i>
+              Sovereign AI: Äg er data
+            </h4>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              Många företag bygger fast sig i dyra och riskfyllda konsultlösningar. Genom att integrera **lokala LLM:er** med era befintliga processer behåller ni fullständig dataintegritet och kontroll, samtidigt som ni sänker löpande konsultkostnader radikalt.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PAGE 2: INTERACTIVE PROJECTS & MODALS -->
+    <section id="section-projects" class="space-y-8 hidden animate-fade-in">
+      <div class="text-center max-w-xl mx-auto space-y-3">
+        <span class="px-3 py-1 bg-brand-500/10 text-brand-500 text-xs font-semibold rounded-full border border-brand-500/20 uppercase tracking-wider">Mina Projekt & Arbetsprover</span>
+        <h2 class="text-3xl font-extrabold text-white tracking-tight">Akademisk innovation i praktiken</h2>
+        <p class="text-slate-400 text-sm">
+          Klicka på valfritt projekt för att utforska interaktiv systemarkitektur, affärsnytta, säkerhetsaspekter och tekniska utmaningar.
+        </p>
+      </div>
+
+      <!-- 5-6 Project Cards Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <!-- PROJECT CARD 1 -->
+        <div onclick="openModal('project-1')" class="bg-slate-900 rounded-2xl border border-slate-800 hover:border-brand-500/50 transition-all duration-300 cursor-pointer overflow-hidden group flex flex-col h-[320px] shadow-lg relative">
+          <!-- 30% Visual Top Section (Inline SVG) -->
+          <div class="h-[30%] bg-slate-950 border-b border-slate-800 flex items-center justify-center p-4 relative overflow-hidden group-hover:bg-slate-900/50 transition-colors">
+            <!-- Decorative Grid Pattern -->
+            <div class="absolute inset-0 opacity-10 bg-[linear-gradient(to_right,#808080_1px,transparent_1px),linear-gradient(to_bottom,#808080_1px,transparent_1px)] bg-[size:14px_24px]"></div>
+            <svg class="w-12 h-12 text-indigo-500 z-10 transition-transform group-hover:scale-110 duration-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="3" y="3" width="18" height="18" rx="2" />
+              <path d="M7 8h10M7 12h10M7 16h6" />
+              <circle cx="17" cy="16" r="2" fill="currentColor" class="text-indigo-400" />
+            </svg>
+          </div>
+          <!-- 70% Content Area -->
+          <div class="p-5 flex-grow flex flex-col justify-between">
+            <div class="space-y-2">
+              <div class="flex items-center justify-between">
+                <span class="text-[10px] uppercase font-bold text-brand-400 tracking-wider">Multi-Agent Systems</span>
+                <span class="text-slate-500 text-xs font-semibold">DT713A</span>
+              </div>
+              <h3 class="text-base font-bold text-white group-hover:text-brand-400 transition-colors line-clamp-1">Agentic Spam-Identifier</h3>
+              <p class="text-slate-400 text-xs line-clamp-3 leading-relaxed">
+                Ett distribuerat agent-system integrerat i en BPMN-processmodell. Hanterar semantisk spamdetektering med inbyggd Supervisor och mänsklig tillsyn.
+              </p>
+            </div>
+            <!-- Badges -->
+            <div class="flex flex-wrap gap-1 mt-3 pt-2 border-t border-slate-800/60">
+              <span class="px-2 py-0.5 bg-slate-950 text-slate-400 rounded text-[10px] font-mono">BPMN</span>
+              <span class="px-2 py-0.5 bg-slate-950 text-slate-400 rounded text-[10px] font-mono">Python</span>
+              <span class="px-2 py-0.5 bg-slate-950 text-slate-400 rounded text-[10px] font-mono">HITL</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT CARD 2 -->
+        <div onclick="openModal('project-2')" class="bg-slate-900 rounded-2xl border border-slate-800 hover:border-brand-500/50 transition-all duration-300 cursor-pointer overflow-hidden group flex flex-col h-[320px] shadow-lg relative">
+          <!-- 30% Visual Top -->
+          <div class="h-[30%] bg-slate-950 border-b border-slate-800 flex items-center justify-center p-4 relative overflow-hidden group-hover:bg-slate-900/50 transition-colors">
+            <div class="absolute inset-0 opacity-10 bg-[linear-gradient(to_right,#808080_1px,transparent_1px),linear-gradient(to_bottom,#808080_1px,transparent_1px)] bg-[size:14px_24px]"></div>
+            <svg class="w-12 h-12 text-emerald-500 z-10 transition-transform group-hover:scale-110 duration-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm1 14.93V19a1 1 0 0 1-2 0v-2.07A8 8 0 0 1 5.07 11H3a1 1 0 0 1 0-2h2.07A8 8 0 0 1 11 5.07V3a1 1 0 0 1 2 0v2.07A8 8 0 0 1 18.93 9H21a1 1 0 0 1 0 2h-2.07A8 8 0 0 1 13 16.93z" />
+            </svg>
+          </div>
+          <div class="p-5 flex-grow flex flex-col justify-between">
+            <div class="space-y-2">
+              <div class="flex items-center justify-between">
+                <span class="text-[10px] uppercase font-bold text-emerald-400 tracking-wider">GeoAI</span>
+                <span class="text-slate-500 text-xs font-semibold">GMAF01</span>
+              </div>
+              <h3 class="text-base font-bold text-white group-hover:text-emerald-400 transition-colors line-clamp-1">SMHI Weather Dashboard</h3>
+              <p class="text-slate-400 text-xs line-clamp-3 leading-relaxed">
+                Interaktiv geospatial analys-dashboard kombinerad med en realtids-AI-agent för klimatanalys med data från öppna API:er.
+              </p>
+            </div>
+            <div class="flex flex-wrap gap-1 mt-3 pt-2 border-t border-slate-800/60">
+              <span class="px-2 py-0.5 bg-slate-950 text-slate-400 rounded text-[10px] font-mono">GeoPandas</span>
+              <span class="px-2 py-0.5 bg-slate-950 text-slate-400 rounded text-[10px] font-mono">Folium</span>
+              <span class="px-2 py-0.5 bg-slate-950 text-slate-400 rounded text-[10px] font-mono">API</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT CARD 3 -->
+        <div onclick="openModal('project-3')" class="bg-slate-900 rounded-2xl border border-slate-800 hover:border-brand-500/50 transition-all duration-300 cursor-pointer overflow-hidden group flex flex-col h-[320px] shadow-lg relative">
+          <!-- 30% Visual Top -->
+          <div class="h-[30%] bg-slate-950 border-b border-slate-800 flex items-center justify-center p-4 relative overflow-hidden group-hover:bg-slate-900/50 transition-colors">
+            <div class="absolute inset-0 opacity-10 bg-[linear-gradient(to_right,#808080_1px,transparent_1px),linear-gradient(to_bottom,#808080_1px,transparent_1px)] bg-[size:14px_24px]"></div>
+            <svg class="w-12 h-12 text-blue-500 z-10 transition-transform group-hover:scale-110 duration-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M4 17v4a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-4M22 10V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2zM6 8h.01M10 8h.01" />
+            </svg>
+          </div>
+          <div class="p-5 flex-grow flex flex-col justify-between">
+            <div class="space-y-2">
+              <div class="flex items-center justify-between">
+                <span class="text-[10px] uppercase font-bold text-blue-400 tracking-wider">Fullstack C#</span>
+                <span class="text-slate-500 text-xs font-semibold">Kandidat</span>
+              </div>
+              <h3 class="text-base font-bold text-white group-hover:text-blue-400 transition-colors line-clamp-1">Design Sprint App med AI</h3>
+              <p class="text-slate-400 text-xs line-clamp-3 leading-relaxed">
+                Applikationsutveckling i C#/.NET med avancerad autentisering, dynamisk positionering och en inbäddad, assisterande AI-agent.
+              </p>
+            </div>
+            <div class="flex flex-wrap gap-1 mt-3 pt-2 border-t border-slate-800/60">
+              <span class="px-2 py-0.5 bg-slate-950 text-slate-400 rounded text-[10px] font-mono">C# .NET</span>
+              <span class="px-2 py-0.5 bg-slate-950 text-slate-400 rounded text-[10px] font-mono">JetBrains</span>
+              <span class="px-2 py-0.5 bg-slate-950 text-slate-400 rounded text-[10px] font-mono">Figma</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT CARD 4 -->
+        <div onclick="openModal('project-4')" class="bg-slate-900 rounded-2xl border border-slate-800 hover:border-brand-500/50 transition-all duration-300 cursor-pointer overflow-hidden group flex flex-col h-[320px] shadow-lg relative">
+          <!-- 30% Visual Top -->
+          <div class="h-[30%] bg-slate-950 border-b border-slate-800 flex items-center justify-center p-4 relative overflow-hidden group-hover:bg-slate-900/50 transition-colors">
+            <div class="absolute inset-0 opacity-10 bg-[linear-gradient(to_right,#808080_1px,transparent_1px),linear-gradient(to_bottom,#808080_1px,transparent_1px)] bg-[size:14px_24px]"></div>
+            <svg class="w-12 h-12 text-rose-500 z-10 transition-transform group-hover:scale-110 duration-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="12" cy="12" r="10" />
+              <path d="M8 12a4 4 0 1 0 8 0" />
+              <rect x="5" y="5" width="14" height="14" rx="1" stroke-dasharray="3 3" />
+            </svg>
+          </div>
+          <div class="p-5 flex-grow flex flex-col justify-between">
+            <div class="space-y-2">
+              <div class="flex items-center justify-between">
+                <span class="text-[10px] uppercase font-bold text-rose-400 tracking-wider">Visual AI</span>
+                <span class="text-slate-500 text-xs font-semibold">DT106A</span>
+              </div>
+              <h3 class="text-base font-bold text-white group-hover:text-rose-400 transition-colors line-clamp-1">Visual Object Detection</h3>
+              <p class="text-slate-400 text-xs line-clamp-3 leading-relaxed">
+                Implementering och finjustering av YOLO-modeller för blixtsnabb objektdetektering med höga kvalitetskrav på träningsdata.
+              </p>
+            </div>
+            <div class="flex flex-wrap gap-1 mt-3 pt-2 border-t border-slate-800/60">
+              <span class="px-2 py-0.5 bg-slate-950 text-slate-400 rounded text-[10px] font-mono">YOLO</span>
+              <span class="px-2 py-0.5 bg-slate-950 text-slate-400 rounded text-[10px] font-mono">Python</span>
+              <span class="px-2 py-0.5 bg-slate-950 text-slate-400 rounded text-[10px] font-mono">CV</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT CARD 5 -->
+        <div onclick="openModal('project-5')" class="bg-slate-900 rounded-2xl border border-slate-800 hover:border-brand-500/50 transition-all duration-300 cursor-pointer overflow-hidden group flex flex-col h-[320px] shadow-lg relative">
+          <!-- 30% Visual Top -->
+          <div class="h-[30%] bg-slate-950 border-b border-slate-800 flex items-center justify-center p-4 relative overflow-hidden group-hover:bg-slate-900/50 transition-colors">
+            <div class="absolute inset-0 opacity-10 bg-[linear-gradient(to_right,#808080_1px,transparent_1px),linear-gradient(to_bottom,#808080_1px,transparent_1px)] bg-[size:14px_24px]"></div>
+            <svg class="w-12 h-12 text-amber-500 z-10 transition-transform group-hover:scale-110 duration-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="2" y="3" width="20" height="14" rx="2" />
+              <line x1="8" y1="21" x2="16" y2="21" />
+              <line x1="12" y1="17" x2="12" y2="21" />
+            </svg>
+          </div>
+          <div class="p-5 flex-grow flex flex-col justify-between">
+            <div class="space-y-2">
+              <div class="flex items-center justify-between">
+                <span class="text-[10px] uppercase font-bold text-amber-400 tracking-wider">Microservices</span>
+                <span class="text-slate-500 text-xs font-semibold">C2MÖ1C</span>
+              </div>
+              <h3 class="text-base font-bold text-white group-hover:text-amber-400 transition-colors line-clamp-1">Java Spring Cloud Microservices</h3>
+              <p class="text-slate-400 text-xs line-clamp-3 leading-relaxed">
+                Modern mjukvaruarkitektur för att modernisera legacy-system genom skalbara mikrotjänster och integration av öppna AI-API:er.
+              </p>
+            </div>
+            <div class="flex flex-wrap gap-1 mt-3 pt-2 border-t border-slate-800/60">
+              <span class="px-2 py-0.5 bg-slate-950 text-slate-400 rounded text-[10px] font-mono">Spring Boot</span>
+              <span class="px-2 py-0.5 bg-slate-950 text-slate-400 rounded text-[10px] font-mono">Cloud Native</span>
+              <span class="px-2 py-0.5 bg-slate-950 text-slate-400 rounded text-[10px] font-mono">WebAPI</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT CARD 6 -->
+        <div onclick="openModal('project-6')" class="bg-slate-900 rounded-2xl border border-slate-800 hover:border-brand-500/50 transition-all duration-300 cursor-pointer overflow-hidden group flex flex-col h-[320px] shadow-lg relative">
+          <!-- 30% Visual Top -->
+          <div class="h-[30%] bg-slate-950 border-b border-slate-800 flex items-center justify-center p-4 relative overflow-hidden group-hover:bg-slate-900/50 transition-colors">
+            <div class="absolute inset-0 opacity-10 bg-[linear-gradient(to_right,#808080_1px,transparent_1px),linear-gradient(to_bottom,#808080_1px,transparent_1px)] bg-[size:14px_24px]"></div>
+            <svg class="w-12 h-12 text-teal-500 z-10 transition-transform group-hover:scale-110 duration-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+            </svg>
+          </div>
+          <div class="p-5 flex-grow flex flex-col justify-between">
+            <div class="space-y-2">
+              <div class="flex items-center justify-between">
+                <span class="text-[10px] uppercase font-bold text-teal-400 tracking-wider">HealthTech</span>
+                <span class="text-slate-500 text-xs font-semibold">DT113A</span>
+              </div>
+              <h3 class="text-base font-bold text-white group-hover:text-teal-400 transition-colors line-clamp-1">Digital Twins in Healthcare</h3>
+              <p class="text-slate-400 text-xs line-clamp-3 leading-relaxed">
+                Co-design av digitala tvillingar och simulerade system inom sjukvården för säkrare beslutsstöd och processförbättring.
+              </p>
+            </div>
+            <div class="flex flex-wrap gap-1 mt-3 pt-2 border-t border-slate-800/60">
+              <span class="px-2 py-0.5 bg-slate-950 text-slate-400 rounded text-[10px] font-mono">Digital Twin</span>
+              <span class="px-2 py-0.5 bg-slate-950 text-slate-400 rounded text-[10px] font-mono">Co-Design</span>
+              <span class="px-2 py-0.5 bg-slate-950 text-slate-400 rounded text-[10px] font-mono">Security</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- INTERACTIVE MODAL COMPONENT (DYNAMISK POP-UP) -->
+  <div id="project-modal" class="fixed inset-0 z-50 overflow-y-auto hidden" role="dialog" aria-modal="true">
+    <!-- Backdrop Blur -->
+    <div class="fixed inset-0 bg-slate-950/80 backdrop-blur-md transition-opacity"></div>
+    
+    <div class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
+      <!-- Modal Content Window -->
+      <div class="relative transform overflow-hidden rounded-3xl bg-slate-900 border border-slate-800 text-left shadow-2xl transition-all sm:my-8 sm:w-full sm:max-w-3xl animate-scale-up">
+        
+        <!-- Header Banner (Visual Representation) -->
+        <div id="modal-banner" class="h-44 bg-slate-950 flex items-center justify-center relative border-b border-slate-800/80">
+          <div class="absolute inset-0 opacity-10 bg-[linear-gradient(to_right,#808080_1px,transparent_1px),linear-gradient(to_bottom,#808080_1px,transparent_1px)] bg-[size:14px_24px]"></div>
+          <!-- Target Area for Dynamically Rendered SVG -->
+          <div id="modal-svg-target"></div>
+          
+          <!-- Close Button -->
+          <button onclick="closeModal()" class="absolute top-4 right-4 p-2 bg-slate-900 hover:bg-slate-800 text-slate-400 hover:text-white rounded-full border border-slate-850 transition-colors">
+            <i data-lucide="x" class="w-5 h-5"></i>
+          </button>
+        </div>
+
+        <div class="p-6 sm:p-8 space-y-6">
+          
+          <!-- Title & Meta -->
+          <div class="space-y-1">
+            <div class="flex items-center gap-2">
+              <span id="modal-tag" class="px-2.5 py-0.5 bg-brand-500/10 text-brand-500 text-[10px] font-bold rounded-full border border-brand-500/20 uppercase tracking-wider">Kategori</span>
+              <span id="modal-course" class="text-xs text-slate-400">Kurskod</span>
+            </div>
+            <h3 id="modal-title" class="text-2xl font-extrabold text-white">Projektnamn</h3>
+          </div>
+
+          <!-- Description Grid -->
+          <div class="grid grid-cols-1 md:grid-cols-12 gap-6 border-t border-slate-800/80 pt-6">
+            
+            <!-- Left Side: Concept & Value (7 cols) -->
+            <div class="md:col-span-7 space-y-5">
+              <div>
+                <h4 class="text-xs font-bold uppercase text-slate-400 tracking-wider flex items-center gap-1.5 mb-2">
+                  <i data-lucide="book-open" class="w-4 h-4 text-brand-500"></i>
+                  Projektöversikt & Syfte
+                </h4>
+                <p id="modal-desc" class="text-slate-300 text-xs sm:text-sm leading-relaxed">Beskrivning av projektet...</p>
+              </div>
+
+              <div>
+                <h4 class="text-xs font-bold uppercase text-slate-400 tracking-wider flex items-center gap-1.5 mb-2">
+                  <i data-lucide="trending-up" class="w-4 h-4 text-emerald-500"></i>
+                  Strategisk Affärsnytta
+                </h4>
+                <p id="modal-business" class="text-slate-300 text-xs leading-relaxed">Hur detta projekt löser ekonomiska eller organisatoriska utmaningar för företaget, t.ex. minskat konsultberoende.</p>
+              </div>
+            </div>
+
+            <!-- Right Side: Architecture & Tech (5 cols) -->
+            <div class="md:col-span-5 bg-slate-950 p-4 rounded-2xl border border-slate-800 space-y-4">
+              <div>
+                <h4 class="text-xs font-bold uppercase text-slate-400 tracking-wider flex items-center gap-1.5 mb-2">
+                  <i data-lucide="code" class="w-4 h-4 text-blue-400"></i>
+                  Teknikstack
+                </h4>
+                <div id="modal-tech-list" class="flex flex-wrap gap-1.5">
+                  <!-- Generated badges -->
+                </div>
+              </div>
+
+              <div>
+                <h4 class="text-xs font-bold uppercase text-slate-400 tracking-wider flex items-center gap-1.5 mb-2">
+                  <i data-lucide="shield-check" class="w-4 h-4 text-amber-500"></i>
+                  Säkerhet & Kontroll
+                </h4>
+                <p id="modal-security" class="text-[11px] text-slate-400 leading-relaxed">Säkerhetsaspekter och dataintegrationsanalys för projektet.</p>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Technical Challenge Details -->
+          <div class="bg-slate-950 p-5 rounded-2xl border border-slate-800 space-y-3">
+            <h4 class="text-xs font-bold uppercase text-slate-300 tracking-wider flex items-center gap-1.5">
+              <i data-lucide="zap" class="w-4 h-4 text-yellow-500"></i>
+              Löst Utmaning (Hur "Hungern" & Nyfikenheten avgjorde)
+            </h4>
+            <p id="modal-challenge" class="text-xs text-slate-300 leading-relaxed">Detaljer kring hur jag tacklade utmaningen, optimerade kodbasen och implementerade en stabil lösning.</p>
+          </div>
+
+          <!-- Bottom Actions -->
+          <div class="flex justify-end gap-3 pt-4 border-t border-slate-800/80">
+            <button onclick="closeModal()" class="px-5 py-2.5 bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white rounded-xl text-sm font-medium transition-all">
+              Stäng detaljer
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-slate-800 bg-slate-950 py-6 text-center text-xs text-slate-500 space-y-2 mt-8">
+    <p>© 2026 Per Anebert • Systemutvecklare & Enterprise AI Orchestrator</p>
+    <p>Skräddarsydd portfölj byggd för agilt samarbete och suverän datasäkerhet.</p>
+  </footer>
+
+  <!-- SCRIPT FOR NAVIGATION & MODAL INTERACTION -->
+  <script>
+    // Project database with structural and visual representation
+    const projectDatabase = {
+      'project-1': {
+        title: 'Enterprise AI: Agentic Spam-Identifier',
+        tag: 'Multi-Agent Systems',
+        course: 'DT713A (3.0 ECTS)',
+        desc: 'Ett banbrytande agentic multiagent-system byggt med utgångspunkt i en formell BPMN-processmodell. Projektet kombinerar avancerade naturliga språkbearbetningstekniker (NLP) från Hugging Face, NLTK och SpaCy för att utföra både statistisk och semantisk identifiering av inkommande e-post samt fördela dem därefter till rätt avdelning.',
+        business: 'Lösningen visar prov på hur man eliminerar det klassiska "Black Box"-problemet med AI. Genom att visualisera flödet med BPMN kan processägarna själva justera routing-regler utan att behöva anlita dyra IT-konsulter för kodändringar. Det minskar löpande underhållskostnader drastiskt.',
+        tech: ['BPMN', 'Python', 'LLM', 'NLTK', 'SpaCy', 'HITL', 'LangChain'],
+        security: 'Inkluderar en strikt Supervisor-agent som kontrollerar både inmatning (Input Guardrails) och utmatning för att motverka dataläckage och fientliga prompt-attacker. Människan (Human-in-the-loop) har alltid sista ordet.',
+        challenge: 'Utmaningen var att routing-agenten tog för lång tid (latens). Jag löste detta genom att införa en "Fast-Path/Deep-Path"-hybrid: snabb sökordsbaserad logik för uppenbara fall, och djup semantisk analys via LLM enbart vid otydlighet. Detta sparade tokens och sänkte svarstiden radikalt.',
+        svg: `<svg class="w-16 h-16 text-indigo-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="3" y="3" width="18" height="18" rx="2" />
+                <path d="M7 8h10M7 12h10M7 16h6" />
+                <circle cx="17" cy="16" r="2" fill="currentColor" class="text-indigo-400" />
+              </svg>`
+      },
+      'project-2': {
+        title: 'GeoAI: SMHI Weather Dashboard',
+        tag: 'GeoAI & Python',
+        course: 'GMAF01 (7.5 ECTS)',
+        desc: 'En interaktiv dashboard för visualisering av klimattrender och meteorologisk realtidsdata, integrerad med en specialiserad AI-agent för löpande mönsterigenkänning. Genom att kombinera geografiska informationssystem (GIS) med djupinlärning för kartor, analyserar verktyget komplexa rumsliga data i farten.',
+        business: 'Idealisk lösning för geofysiskt rörliga organisationer (t.ex. logistik eller räddningstjänst). Istället för att köpa dyra externa analysrapporter kan organisationen internt visualisera, analysera och spara sin egen klimatinformation direkt.',
+        tech: ['Geospatial Python', 'GeoPandas', 'Folium', 'QGIS', 'Online API', 'Jupyter'],
+        security: 'Säkerställer dataintegritet genom lokal cachning och sanering av externa API-anrop. Ingen data lämnar det egna nätverket vid lokala interpolationer.',
+        challenge: 'Hanteringen av massiva GeoTIFF- och Shapefiler skapade flaskhalsar i webb-renderingarna. Jag övervann detta genom att implementera effektiv geospatial interpolation samt asynkrona AJAX-anrop som strömmade datakoordinater till Folium-kartorna.',
+        svg: `<svg class="w-16 h-16 text-emerald-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm1 14.93V19a1 1 0 0 1-2 0v-2.07A8 8 0 0 1 5.07 11H3a1 1 0 0 1 0-2h2.07A8 8 0 0 1 11 5.07V3a1 1 0 0 1 2 0v2.07A8 8 0 0 1 18.93 9H21a1 1 0 0 1 0 2h-2.07A8 8 0 0 1 13 16.93z" />
+              </svg>`
+      },
+      'project-3': {
+        title: 'Fullstack App med Autentiserad AI-agent',
+        tag: 'Fullstack Development',
+        course: 'Kandidatexamen (7.5 ECTS)',
+        desc: 'Ett praktiskt och omfattande utvecklingsprojekt där vi använde Google Design Sprint-metodiken för att gå från konceptuell skiss till färdig produkt. Resultatet blev en applikation byggd i C#/.NET med avancerade säkerhetsfunktioner, positioneringsstöd och en personligt konfigurerad AI-agent.',
+        business: 'Visar min förmåga att bygga säkra applikationer från grunden. Kombinationen av agil produktplanering, Figma-wireframes och färdig .NET-logik bevisar att jag behärskar hela kedjan från idé till driftsatt mjukvara.',
+        tech: ['C#', '.NET Core', 'JetBrains Rider', 'Figma', 'Miro', 'SQL', 'Google Design Sprint'],
+        security: 'Implementerade rollbaserad åtkomstkontroll (RBAC), krypterad databaslagring för användaruppgifter samt säkrade anslutningar vid positioneringsanrop.',
+        challenge: 'Att koordinera samarbetet mellan den lokala C#-applikationen och externa positionerings- och AI-API:er. Jag strukturerade upp en renodlad Repository-modell och använde dependency injection i .NET, vilket gjorde koden mycket lätt att underhålla.',
+        svg: `<svg class="w-16 h-16 text-blue-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M4 17v4a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-4M22 10V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2zM6 8h.01M10 8h.01" />
+              </svg>`
+      },
+      'project-4': {
+        title: 'Visual Object Detection: YOLO',
+        tag: 'Visual AI',
+        course: 'DT106A (3.0 ECTS)',
+        desc: 'Praktisk träning och integrering av YOLO-modeller (You Only Look Once) för extremt snabb realtidsigenkänning av fysiska objekt i rörligt bildmaterial. Projektet kombinerade avancerad bildanalys med strikt datakvalitetssäkring.',
+        business: 'Denna spetskompetens är högintressant inom logistik, industrisäkerhet samt sjukvård (t.ex. bilddiagnostik). Genom att träna modellerna på egna datasets skapas helt skräddarsydda filter för specifika verksamhetsbehov.',
+        tech: ['YOLO', 'Python', 'Computer Vision', 'PyTorch', 'Data-driven dev', 'OpenCV'],
+        security: 'Utvecklat med fokus på lokal exekvering av bildanalysen, vilket innebär att inga externa bildströmmar behöver lämna organisationens nätverk eller bryta mot lagar kring bildintegritet.',
+        challenge: 'Största utmaningen låg i att nå tillräckligt hög träffsäkerhet utan att modellen överanpassades (overfitting). Detta löstes genom rigorös dataaugmentering och validering av träningsdatans kvalitet enligt principerna för datadriven AI-utveckling.',
+        svg: `<svg class="w-16 h-16 text-rose-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M8 12a4 4 0 1 0 8 0" />
+                <rect x="5" y="5" width="14" height="14" rx="1" stroke-dasharray="3 3" />
+              </svg>`
+      },
+      'project-5': {
+        title: 'Spring Cloud Microservices',
+        tag: 'Enterprise Architecture',
+        course: 'C2MÖ1C (4.0 ECTS)',
+        desc: 'Konstruktion av en modern mjukvaruarkitektur uppbyggd av distribuerade mikrotjänster med Java Spring Cloud och integrerade AI-tjänster. Projektet simulerar en komplex miljö där legacy-system lyfts och görs framtidssäkra.',
+        business: 'Ett av de största problemen för etablerade bolag är föråldrad kodbas (legacy). Genom att dela upp systemet i mikrotjänster kan vi bygga på nya, smarta AI-funktioner stegvis, utan att riskera den stabila grunddriften.',
+        tech: ['Java', 'Spring Boot', 'Spring Cloud', 'API-Gateway', 'Docker', 'Microservices'],
+        security: 'Centraliserad säkerhetshantering i API-Gatewayen samt strikt autentisering och auktorisering mellan mikrotjänsterna för att förhindra obehörig åtkomst.',
+        challenge: 'Att hantera transaktionskonsistens och kommunikation mellan de oberoende mikrotjänsterna. Genom att implementera asynkron meddelandehantering och ett robust API Gateway-mönster blev applikationen både snabb och feltolerant.',
+        svg: `<svg class="w-16 h-16 text-amber-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="2" y="3" width="20" height="14" rx="2" />
+                <line x1="8" y1="21" x2="16" y2="21" />
+                <line x1="12" y1="17" x2="12" y2="21" />
+              </svg>`
+      },
+      'project-6': {
+        title: 'Digitala Tvillingar i Sjukvården',
+        tag: 'HealthTech',
+        course: 'DT113A (3.0 ECTS)',
+        desc: 'Co-design av digitala lösningar och grundläggande simuleringar av komplexa vårdförlopp via digitala tvillingar. Ett tvärvetenskapligt projekt som kombinerar folkhälsoaspekter, kliniska data och intelligenta flödesanalyser.',
+        business: 'Låter vården och ledningen simulera organisatoriska förändringar eller patientflöden innan de genomförs i verkligheten. Det sparar både tid, pengar och minskar framförallt mänskligt lidande genom att optimera flaskhalsar proaktivt.',
+        tech: ['Digital Twin', 'Healthcare Design', 'Co-Design', 'Process Simulation', 'Big Data'],
+        security: 'Eftersom patientdata är det absolut mest känsliga som finns, designades systemet med sträng anonymisering och regelefterlevnad i linje med GDPR och Patientdatalagen.',
+        challenge: 'Att översätta kliniska, mänskliga utmaningar till kvantitativa matematiska simuleringsmodeller. Genom att köra tät co-design (samarbete) med vårdpersonal kunde vi verifiera att simuleringsagenterna efterliknade det verkliga beteendet på ett korrekt sätt.',
+        svg: `<svg class="w-16 h-16 text-teal-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M19 14c1.49-1.46
