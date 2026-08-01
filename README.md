@@ -1,6 +1,6 @@
 <div align="center">
 
-# Hi there, I'm Per Anebert 👋
+# Hi there, I'm Per 👋
 
 <img src="src/orange_rob.png" alt="Profile Head" width="200" style="border-radius:50%; margin-bottom: 20px;">
 
