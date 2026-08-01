@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Per Anebert - Portfolio</title>
+    <style>
+        :root {
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --text-main: #0f172a;
+            --text-muted: #475569;
+            --primary: #2563eb;
+            --primary-hover: #1d4ed8;
+            --accent: #0ea5e9;
+            --border-color: #e2e8f0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 30px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0 0 10px 0;
+            color: var(--text-main);
+            letter-spacing: -0.05em;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: var(--primary);
+            margin: 0;
+            font-weight: 600;
+        }
+
+        .section-title {
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            color: var(--text-main);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .project-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 35px;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.05), 0 2px 4px -2px rgb(0 0 0 / 0.05);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.08);
+        }
+
+        .project-title {
+            font-size: 1.5rem;
+            color: var(--text-main);
+            margin: 0 0 5px 0;
+        }
+
+        .project-subtitle {
+            font-size: 1rem;
+            color: var(--accent);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 20px;
+        }
+
+        .project-overview {
+            color: var(--text-muted);
+            margin-bottom: 25px;
+            font-size: 1.05rem;
+        }
+
+        .highlights-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: var(--text-main);
+        }
+
+        .highlights-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0 0 25px 0;
+        }
+
+        .highlights-list li {
+            position: relative;
+            padding-left: 25px;
+            margin-bottom: 12px;
+            color: var(--text-main);
+        }
+
+        .highlights-list li::before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: var(--primary);
+            font-weight: bold;
+        }
+
+        .highlights-list li strong {
+            color: var(--primary);
+        }
+
+        .project-btn {
+            display: inline-block;
+            background-color: var(--primary);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: background-color 0.2s ease;
+        }
+
+        .project-btn:hover {
+            background-color: var(--primary-hover);
+        }
+
+        @media (max-width: 600px) {
+            body { padding: 20px 10px; }
+            .project-card { padding: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Per Anebert</h1>
+        <p>System Developer & AI Architect — Portfolio Case Studies</p>
+    </header>
+
+    <main>
+        <h2 class="section-title">🚀 Featured Deep-Dive Projects</h2>
+
+        <article class="project-card">
+            <h3 class="project-title">An agentic multi-agent system concept</h3>
+            <div class="project-subtitle">Enterprise AI Architecture & Process Integration</div>
+            <p class="project-overview">
+                Developed an architectural framework for agentic multi-agent systems that utilizes LLM agents to solve complex tasks through NLP analysis and the modeling of intricate contexts. By translating advanced technical theories into scalable implementation methods, the project integrated these systems into business processes using visual tools (such as BPMN) to improve organizational understanding and proficiency. This approach successfully bridged the gap between theoretical concepts and practical applications, simplifying strategic discussions and establishing a foundation for configuring proprietary AI systems as a core internal competency.
+            </p>
+            <div class="highlights-title">Technical & Architectural Highlights:</div>
+            <ul class="highlights-list">
+                <li><strong>Hierarchical Organization:</strong> Designed a distributed problem-solving architecture featuring a Router Agent for task sharing and a Supervisor Agent (Executive Controller) for quality control and conflict management.</li>
+                <li><strong>BDI Agent Architecture:</strong> Implemented deliberative (cognitive) agents using the Belief-Desire-Intention model. The agents utilize Retrieval-Augmented Generation (RAG) and Model Context Protocol (MCP) systems to form their "Beliefs".</li>
+                <li><strong>Process Integration:</strong> Modeled the entire multi-agent interaction using BPMN (Business Process Model and Notation) to visually present logic, control, and responsibility.</li>
+                <li><strong>Human-in-the-Loop Governance:</strong> Ensured organizational integrity by designing the system with strict institutional rules, where human operators maintain overall responsibility for long-term goals and policy updates via a Global Audit Log.</li>
+            </ul>
+            <a href="#" class="project-btn">View Architecture & BPMN Diagram</a>
+        </article>
+
+        <article class="project-card">
+            <h3 class="project-title">Spam Email Identifier & Automated Triage System</h3>
+            <div class="project-subtitle">Data Science, Machine Learning & Intelligent Routing</div>
+            <p class="project-overview">
+                Developed an advanced software prototype for spam identification and message routing that bridges the gap between traditional data science and modern generative AI. The system evaluates a lightweight Machine Learning model (Naive Bayes) against local and cloud-based Large Language Models (such as Llama 3 and Mistral via Ollama/Groq) using dynamic datasets from Kaggle and Hugging Face. To transform raw classifications into actionable business logic, the application implements Named Entity Recognition (NER) and "Department Routing," simulating a real-world corporate environment by automatically triaging and rerouting emails to the correct organizational units (e.g., Finance, HR, Legal, or IT).
+            </p>
+            <div class="highlights-title">Technical & Analytical Highlights:</div>
+            <ul class="highlights-list">
+                <li><strong>Performance Engineering:</strong> Demonstrated that while Naive Bayes offers exceptional speed and baseline precision (98%), integrated LLMs contribute critical semantic context necessary to differentiate legitimate business invoices from sophisticated phishing attempts.</li>
+                <li><strong>Interactive Data Visualization:</strong> Designed and deployed a comprehensive dashboard using Gradio that visualizes live performance metrics, interactive confusion matrices, word clouds, and token frequency plots.</li>
+                <li><strong>Business Intelligence & Compliance:</strong> Designed the prototype to recognize specific compliance and enterprise issues (such as GDPR triggers) in real-time during the intake process, showcasing how unstructured data can be transformed into structured, secure automation pipelines.</li>
+            </ul>
+            <a href="#" class="project-btn">Open Live Gradio Dashboard Demo</a>
+        </article>
+    </main>
+</div>
+
+</body>
+</html>
