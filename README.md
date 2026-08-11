@@ -1,9 +1,7 @@
 <div align="center">
 
 # Hi there, I'm Per 👋
-
-<img src="src/orange_rob.png" alt="Profile Head" width="200" style="border-radius:50%; margin-bottom: 20px;">
-
++++
 ### 🚀 Enterprise AI Orchestrator & System Developer
 
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=FF9F0A&center=true&vCenter=true&width=435&lines=Bridging+Business+and+AI;Enterprise+AI+Architecture;System+Development+%26+Integration)](https://git.io/typing-svg)
